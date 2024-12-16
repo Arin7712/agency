@@ -32,7 +32,7 @@ xl:w-4/5
     >
       <Link href="/">
       <Image
-        src="/logo/logo.webp"
+        src="/logo/aisonnet.png"
         alt="Bird Logo"
         width={1000}
         height={1000}
@@ -42,21 +42,21 @@ xl:w-4/5
 
       <div className="absolute right-1/2 translate-x-1/2 transform">
         <div className="hidden md:flex gap-x-10 2xl:gap-x-10 items-center text-gray-700 font-medium text-lg ">
-          <Link
+          {/*<Link
             href="/showcase"
             className="
-          hover:text-blue-500
+          hover:text-purple-600
           "
           >
             Showcase
-          </Link>
-             <Link href="/" className="hover:text-blue-500">
+          </Link>*/}
+             <Link href="/" className="hover:text-purple-600">
             Services
           </Link>
-          <Link href="/" className="hover:text-blue-500">
+          <Link href="/" className="hover:text-purple-600">
         Process
           </Link>
-          <Link href="/" className="hover:text-blue-500">
+          <Link href="/" className="hover:text-purple-600">
             Guarentees
           </Link>
   
@@ -65,11 +65,7 @@ xl:w-4/5
 
 
       <div className="flex items-center gap-x-4">
-      <a href="tel:5193191562" className="hidden xl:flex">
-              <button className="px-4 py-2  rounded-md flex items-center gap-x-3 ">
-            (519)-319-1562
-              </button>
-            </a>
+    
 
 
       <Link

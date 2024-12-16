@@ -3,54 +3,59 @@ import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
 import Image from "next/image";
 
+
+import Bolt from '@mui/icons-material/Bolt';
+import Highlight from '@mui/icons-material/Highlight';
+import Bookmark from '@mui/icons-material/Bookmark';
+import Group from '@mui/icons-material/Group';
+import VerifiedUser from '@mui/icons-material/VerifiedUser';
+import TrendingUp from '@mui/icons-material/TrendingUp';
+import Tune from '@mui/icons-material/Tune';
+import MarkEmailUnread from '@mui/icons-material/MarkEmailUnread';
+import Paid from '@mui/icons-material/Paid';
+
 const features = [
   {
-    icon: "/icons/fast.svg",
-    title: "Fast Delivery",
+    icon: <Bolt style={{ fontSize: 30, color: '#9333EA' }} />,
+    title: "Best ROI",
     description:
-      "1-2 weeks delivery for most projects. Call us for more information.",
+      "We give you a spine chilling ROI.",
   },
   {
-    icon: "/icons/design.svg",
-    title: "Design & Development",
+    icon: <Highlight style={{ fontSize: 30, color: '#9333EA' }} />,
+    title: "Develop & Automate",
     description:
-      "We design and develop your website with the latest technologies and trends.",
+      "We serve you with systems that make your manual work seamless.",
   },
   {
-    icon: "/icons/scalable.svg",
+    icon: <Bookmark style={{ fontSize: 30, color: '#9333EA' }} />,
     title: "Scalability + Maintenance ",
-    description: "We offer maintenance and scalability for all websites.",
+    description: "We offer maintenance and scalability for all your systems.",
   },
   {
-    icon: "/icons/team.svg",
+    icon: <Group style={{ fontSize: 30, color: '#9333EA' }} />,
     title: "Team of Experts",
     description: "A team of experts ready to help you, at all times.",
   },
   {
-    icon: "/icons/safe.svg",
+    icon: <VerifiedUser style={{ fontSize: 30, color: '#9333EA' }} />,
     title: "Secure Building",
     description:
       "Safe and secure building practices. To ensure your data is safe.",
   },
   {
-    icon: "/icons/analytics.svg",
+    icon: <TrendingUp style={{ fontSize: 30, color: '#9333EA' }} />,
     title: "Analytics Tracking",
     description: "Track your progress with our built in analytics",
   },
-
   {
-    icon: "/icons/flexible.svg",
-    title: "Dynamic Websites",
-    description: "We build dynamic solutions that are easy to manage.",
-  },
-  {
-    icon: "/icons/support.svg",
+    icon: <MarkEmailUnread style={{ fontSize: 30, color: '#9333EA' }} />,
     title: "24/7 Support",
     description:
       "We offer 24/7 support for all our clients. Call us for more information.",
   },
   {
-    icon: "/icons/money.svg",
+    icon: <Paid style={{ fontSize: 30, color: '#9333EA' }} />,
     title: "Affordable Pricing",
     description: "Affordable pricing for all our clients.",
   },
@@ -81,13 +86,7 @@ export function ShootingStarsAndStarsBackgroundDemo() {
                         from-neutral-700 to-neutral-800 
                     font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
             >
-              <Image
-                src={feature.icon}
-                width={10000}
-                height={10000}
-                alt="icon"
-                className="w-8 h-8"
-              />
+              <>{feature.icon}</>
             </button>
 
             <h3 className="text-xl font-bold mt-4 text-white">

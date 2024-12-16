@@ -21,46 +21,46 @@ import LetsMakeThingsHappenSection from "@/components/ui/lets-make-things-happen
 const services = [
   {
     icon: "/images/s_6.png",
-    title: "Web Design + Development",
+    title: "Customer Support",
     description:
-      "Take your business to the next level with our web design and development services",
+      "We automate your customer support 24/7 by leveraging AI",
   },
   {
     icon: "/images/s_1.png",
-    title: "Search Engine Optimization",
+    title: "Email Automations",
     description:
-      "Get your website to the top of search engine results with our SEO services",
+      "Get your email reach outs, campaigns, follow-ups automated within no time!",
   },
   {
     icon: "/images/s_5.png",
-    title: "Content Creation",
+    title: "Staff Training",
     description:
-      "Boost your brand's online presence with our social media marketing services",
+      "We make staff training efficient for companies by getting rid of manual and time consuming tasks",
   },
   {
     icon: "/images/s_3.png",
-    title: "Social Media Marketing",
+    title: "Team Coaching",
     description:
-      "Interact with your customers and increase sales with our email marketing services",
+      "We coach your team on AI solutions and tools, how to implement them effectively",
   },
   {
     icon: "/images/s_4.png",
-    title: "Email Marketing",
+    title: "Consulting",
     description:
-      "With our content creation services, we help businesses drive results",
+      "Your business needs to get rid of manual tasks and we're here to consult you",
   },
   {
-    icon: "/images/s_2.png",
-    title: "Pay-Per-Click Advertising",
-    description:
-      "Don't waste money on ineffective advertising. Our PPC services help you reach your target audience",
-  },
+    icon: "/images/s_5.png",
+    title: "Lead Generation",
+    description: "We give you the best qualified leads that'll sure turn into clients"
+  }
+
 ];
 
 export default function Home() {
   return (
     <div
-      className="overflow-clip 
+      className="overflow-hidden 
  inset-0 
  -z-10 h-full w-full bg-[#fafafa]
   bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)]
@@ -74,7 +74,7 @@ export default function Home() {
       >
         <Link href={"/"}>
           <Image
-            src={"/logo/logo.webp"}
+            src={"/logo/aisonnet.png"}
             alt="Logo"
             width={1000}
             height={1000}
@@ -83,15 +83,15 @@ export default function Home() {
         </Link>
 
         <div className="absolute right-1/2 translate-x-1/2 transform">
-          <div className="hidden md:flex gap-x-10 items-center text-gray-700 font-medium text-lg cursor-pointer">
-            <Link href={"/showcase"} className="hover:text-blue-500">
+          <div className="hidden md:flex gap-x-10 items-center text-gray-700 font-medium text-lg cursor-pointer mr-2">
+            {/*<Link href={"/showcase"} className="hover:text-purple-600 transition-all duration-200">
               Showcase
-            </Link>
+            </Link>*/}
 
             <ScrollLink
               to="services"
               smooth={true}
-              className="hover:text-blue-500"
+              className="hover:text-purple-600 transition-all duration-200"
             >
               Services
             </ScrollLink>
@@ -99,7 +99,7 @@ export default function Home() {
             <ScrollLink
               to="process"
               smooth={true}
-              className="hover:text-blue-500"
+              className="hover:text-purple-600 transition-all duration-200"
             >
               Process
             </ScrollLink>
@@ -107,19 +107,14 @@ export default function Home() {
             <ScrollLink
               to="guarentees"
               smooth={true}
-              className="hover:text-blue-500"
+              className="hover:text-purple-600 transition-all duration-200"
             >
               Guarentees
             </ScrollLink>
           </div>
         </div>
 
-        <div className="flex items-center gap-x-4">
-          <a href="tel:519400200" className="hidden lg:flex">
-            <button className="px-4 py-2 rounded-md flex items-center gap-x-3">
-              (519)-400-200
-            </button>
-          </a>
+        <div className="flex items-center mx-2 gap-x-4">
 
           <Link
             href={"/meeting"}
@@ -127,7 +122,7 @@ export default function Home() {
   py-3 
   px-6
   text-lg 
-  hover:bg-[#abcbff]
+  hover:bg-purple-600
   rounded-[6px]
   border-2
   border-black
@@ -171,7 +166,7 @@ export default function Home() {
             px-10
             md:px-16
       md:text-xl
-      hover:bg-[#abcbff] 
+      hover:bg-purple-600 
       rounded-[6px]
       border-2 
       border-black 
@@ -201,29 +196,29 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 items-center text-left md:justify-items-center md:mx-auto mt-10 md:mt-16">
-            <BoxReveal boxColor={"#3b82f6"} duration={0.5}>
+          <div className="grid grid-cols-2 md:grid-cols-4 justify-between items-center text-left md:justify-items-center md:mx-auto mt-10 md:mt-16">
+            <BoxReveal boxColor={"#9333EA"} duration={0.5}>
               <p className="md:text-xl font-semibold flex gap-x-2 md:gap-x-4 items-center">
-                <PiCheckBold className="text-xl text-blue-500" />
-                Design
+                <PiCheckBold className="text-xl text-purple-600" />
+                Automations
               </p>
             </BoxReveal>
-            <BoxReveal boxColor={"#3b82f6"} duration={0.5}>
+            <BoxReveal boxColor={"#9333EA"} duration={0.5}>
               <p className="md:text-xl font-semibold flex gap-x-2 md:gap-x-4 items-center">
-                <PiCheckBold className="text-xl text-blue-500" />
+                <PiCheckBold className="text-xl text-purple-600" />
                 Development
               </p>
             </BoxReveal>
-            <BoxReveal boxColor={"#3b82f6"} duration={0.5}>
+            <BoxReveal boxColor={"#9333EA"} duration={0.5}>
               <p className="md:text-xl font-semibold flex gap-x-2 md:gap-x-4 items-center">
-                <PiCheckBold className="text-xl text-blue-500" />
-                Marketing
+                <PiCheckBold className="text-xl text-purple-600" />
+                AI
               </p>
             </BoxReveal>
-            <BoxReveal boxColor={"#3b82f6"} duration={0.5}>
+            <BoxReveal boxColor={"#9333EA"} duration={0.5}>
               <p className="md:text-xl font-semibold flex gap-x-2 md:gap-x-4 items-center">
-                <PiCheckBold className="text-xl text-blue-500" />
-                Strategy
+                <PiCheckBold className="text-xl text-purple-600" />
+                Systems
               </p>
             </BoxReveal>
           </div>
@@ -236,8 +231,8 @@ export default function Home() {
 
               <div className="flex my-6 gap-x-5 w-full">
                 <div>
-                  <h1 className="text-blue-500 text-3xl md:text-5xl">
-                    <NumberTicker value={1000} /> +
+                  <h1 className="text-purple-600 text-3xl md:text-5xl">
+                    <NumberTicker value={2} /> +
                     <p className="text-gray-500 text-sm md:text-md">
                       Happy Clients
                     </p>
@@ -247,8 +242,8 @@ export default function Home() {
                 <div className="w-px bg-gray-300 self-stretch"></div>
 
                 <div className="flex-1 min-w-0">
-                  <h1 className="text-blue-500 text-3xl md:text-5xl whitespace-nowrap overflow-hidden">
-                    <NumberTicker value={100} /> +
+                  <h1 className="text-purple-600 text-3xl md:text-5xl whitespace-nowrap overflow-hidden">
+                    <NumberTicker value={3} /> +
                     <p className="text-gray-500 text-sm md:text-md">
                       Projects Completed
                     </p>
@@ -263,11 +258,11 @@ export default function Home() {
                 direction="left"
                 items={[
                   {
-                    logo: "/logo/logo.webp",
+                    logo: "/logo/aisonnet.png",
                     name: "Logo",
                   },
                   {
-                    logo: "/logo/logo.webp",
+                    logo: "/logo/aisonnet.png",
                     name: "Logo",
                   },
                 ]}
@@ -283,7 +278,7 @@ export default function Home() {
           <WordPullUpDemo />
         </h1>
         <p className="md:text-center py-4 md:w-1/2 mx-auto text-xl md:text-2xl text-gray-500">
-        All of our services are designed to help your business stand out 
+        All of our services are designed to help your business automate workflows
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
@@ -315,23 +310,23 @@ export default function Home() {
         <main className="md:px-0 mx-6 md:mx-auto">
         <h1 className="text-3xl md:text-5xl md:text-center font-medium flex items-center gap-x-2 mx-auto justify-center">
         Our{" "}
-            <span className="text-blue-500 flex gap-x-1 items-center">
+            <span className="text-purple-600 flex gap-x-1 items-center">
               {" "}
-              <Image
+              {/*<Image
                 src={"/icons/squiggle.svg"}
                 width={10000}
                 height={10000}
                 className="w-6"
                 alt="image"
-              />
+              />*/}
               Creative
-              <Image
+              {/*<Image
                 src={"/icons/star.svg"}
                 width={10000}
                 height={10000}
                 className="w-6 mb-8"
                 alt="image"
-              />
+              />*/}
             </span>{" "}
             Process
           </h1>
@@ -359,7 +354,7 @@ export default function Home() {
       <section>
         <main className="md:flex items-center justify-center space-y-6 md:space-y-0 md:gap-x-20 xl:w-4/5 2xl:w-[68%] mx-auto px-6 md:px-0">
           <Image
-            src={"/logo/logo.webp"}
+            src={"/logo/aisonnet.png"}
             width={10000}
             height={10000}
             className=" md:w-1/3 rounded-md"
@@ -397,25 +392,39 @@ export default function Home() {
       </section>
 
       <footer className="bg-[#fafafa] py-10  px-6 md:px-0 md:mx-auto border-t">
-        <div className="flex flex-col  justify-between gap-y-3 xl:w-4/5 2xl:w-[68%] mx-auto">
+        <div className="flex flex-col  justify-between gap-y-4 xl:w-4/5 2xl:w-[68%] mx-auto">
           <h1 className="text-3xl md:text-5xl font-medium ">
             <Image
-              src={"/logo/logo.webp"}
+              src={"/logo/aisonnet.png"}
               width={10000}
               height={10000}
               className="w-40"
               alt="image"
             />{" "}
           </h1>
-          <p className="text-left  text-xl  text-gray-500">519-200-5000</p>
-          <p className="text-left  text-xl  text-gray-500">
-            admin@birdsoftware.ca
-          </p>
+          <Link href="https://www.instagram.com/aisonnet/" className="text-left flex gap-2 items-center text-xl  text-gray-500">
+            <Image
+            src="/images/instagram.png"
+            alt="instagram"
+            width={22}
+            height={22}
+            />
+            aisonnet
+          </Link>
+          <a href="mailto:aringawande7712@gmail.com" className="text-left flex gap-2 items-center text-xl  text-gray-500">
+            <Image
+            src="/images/email.png"
+            alt="email"
+            width={22}
+            height={22}
+            />
+            aringawande7712@gmail.com
+          </a>
         </div>
 
         <div className="flex md:justify-center gap-x-4 mt-10">
-          © 2025 Bird. All Rights Reserved.
-          <Link href="/" className="text-blue-500">
+          © 2025 AI Sonnet. All Rights Reserved.
+          <Link href="/" className="text-purple-600">
             Privacy Policy
           </Link>
         </div>
